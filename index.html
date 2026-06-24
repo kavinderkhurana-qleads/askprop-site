@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ask AiSHA — Dubai Property, Simplified | askprop.ai</title>
+<meta name="description" content="Ask AiSHA — your free AI home advisor for Dubai real estate. Honest advice on areas, prices, rental yields and the Golden Visa, on WhatsApp. No cost, no pressure." />
+<meta name="theme-color" content="#0d0820" />
+<link rel="canonical" href="https://askprop.ai/" />
+<meta property="og:title" content="Ask AiSHA — Dubai Property, Simplified" />
+<meta property="og:description" content="Free AI home advisor for Dubai real estate. Honest answers on WhatsApp." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://askprop.ai/" />
+<meta property="og:image" content="https://askprop.ai/assets/img/hero-dubai-desktop.jpg" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" /><link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ink:#0d0820; --ink2:#160d33; --ink3:#1d1240;
+    --gold:#FFC85A; --gold-d:#5a3a00;
+    --coral:#FF6B6B; --magenta:#E0457B;
+    --wa:#25D366; --wa-d:#04391c;
+    --white:#ffffff; --mute:rgba(255,255,255,0.74);
+    --radius:16px;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--ink);color:var(--white);font-family:'Inter',sans-serif;font-weight:300;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+  h1,h2,h3,.display{font-family:'Sora',sans-serif;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 22px;}
+
+  /* HEADER */
+  header{position:absolute;top:0;left:0;right:0;z-index:20;}
+  .hbar{display:flex;align-items:center;justify-content:space-between;padding:18px 22px;max-width:1200px;margin:0 auto;}
+  .logo{font-family:'Sora',sans-serif;font-weight:600;font-size:21px;color:#fff;letter-spacing:-.01em;}
+  .logo b{color:var(--gold);font-weight:600;}
+  .hnav{display:flex;align-items:center;gap:18px;}
+  .pill-region{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.16);backdrop-filter:blur(6px);color:#fff;font-size:13px;padding:7px 13px;border-radius:999px;}
+
+  /* HERO */
+  .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;}
+  .hero picture,.hero img.bg{position:absolute;inset:0;width:100%;height:100%;}
+  .hero img.bg{object-fit:cover;object-position:50% 26%;filter:brightness(0.6) contrast(1.04);}
+  .hero .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,4,22,0.55) 0%,rgba(8,4,22,0.18) 22%,rgba(8,4,22,0.28) 44%,rgba(8,4,22,0.74) 68%,rgba(8,4,22,0.98) 100%);}
+  .hero-inner{position:relative;z-index:5;width:100%;max-width:1200px;margin:0 auto;padding:0 22px 40px;}
+  .eyebrow{display:inline-block;background:rgba(255,200,90,0.2);color:#ffe6ad;font-size:12px;letter-spacing:1.6px;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:18px;}
+  .hero h1{font-size:clamp(44px,10vw,92px);font-weight:700;line-height:0.96;letter-spacing:-.02em;text-shadow:0 3px 28px rgba(0,0,0,0.55);}
+  .hero h1 .acc{color:var(--gold);}
+  .hero .sub{font-size:clamp(16px,2.4vw,21px);color:#fff;margin-top:16px;max-width:560px;font-weight:400;text-shadow:0 1px 14px rgba(0,0,0,0.6);}
+
+  .aisha-teaser{display:flex;align-items:flex-start;gap:11px;margin-top:26px;max-width:430px;}
+  .av{width:40px;height:40px;border-radius:50%;background:var(--gold);color:var(--gold-d);font-family:'Sora';font-weight:600;display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative;}
+  .av .dot{position:absolute;bottom:0;right:0;width:11px;height:11px;border-radius:50%;background:var(--wa);border:2.5px solid var(--ink);}
+  .bubble{background:rgba(255,255,255,0.96);color:#241247;font-size:14px;line-height:1.45;padding:11px 14px;border-radius:4px 16px 16px 16px;}
+
+  .cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:30px;}
+  .btn-wa{display:inline-flex;align-items:center;gap:10px;background:var(--wa);color:var(--wa-d);font-family:'Sora';font-weight:600;font-size:16px;padding:16px 26px;border-radius:14px;transition:transform .15s,box-shadow .2s;box-shadow:0 8px 30px rgba(37,211,102,0.3);}
+  .btn-wa:hover{transform:translateY(-2px);box-shadow:0 12px 38px rgba(37,211,102,0.4);}
+  .btn-wa svg{width:20px;height:20px;}
+  .btn-ghost{display:inline-flex;align-items:center;gap:7px;color:#fff;font-size:15px;font-weight:400;}
+  .btn-ghost .ar{transition:transform .2s;}
+  .btn-ghost:hover .ar{transform:translateX(4px);}
+  .scrollcue{margin-top:30px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.6);}
+
+  /* VALUE */
+  .section{padding:84px 0;}
+  .kicker{color:var(--gold);font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:500;margin-bottom:14px;}
+  .h2{font-family:'Sora';font-size:clamp(30px,5vw,46px);font-weight:600;line-height:1.05;letter-spacing:-.02em;}
+  .lead{color:var(--mute);font-size:17px;max-width:620px;margin-top:16px;}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:46px;}
+  .card{background:linear-gradient(180deg,var(--ink3),var(--ink2));border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius);padding:26px 24px;}
+  .card .ic{width:46px;height:46px;border-radius:12px;background:rgba(255,200,90,0.14);color:var(--gold);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:18px;}
+  .card h3{font-family:'Sora';font-size:18px;font-weight:600;margin-bottom:8px;}
+  .card p{color:var(--mute);font-size:14.5px;line-height:1.6;}
+
+  /* AREAS */
+  .areas{background:var(--ink2);}
+  .chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px;}
+  .chip{display:inline-flex;align-items:center;gap:8px;background:var(--ink3);border:1px solid rgba(255,255,255,0.1);color:#fff;font-size:15px;padding:12px 18px;border-radius:999px;transition:border-color .2s,transform .15s;}
+  .chip:hover{border-color:var(--gold);transform:translateY(-1px);}
+  .chip .ar{color:var(--gold);}
+
+  /* PHOTO SECTIONS */
+  .photo-sec{position:relative;background:var(--ink);overflow:hidden;}
+  .photo-sec>.bgimg{position:absolute;inset:0;z-index:0;background-size:cover;background-position:center;}
+  .photo-sec>.ov{position:absolute;inset:0;z-index:1;}
+  .photo-sec>.wrap,.photo-sec>.inner{position:relative;z-index:2;}
+  .ov-dark{background:linear-gradient(180deg,rgba(8,4,22,0.74) 0%,rgba(8,4,22,0.6) 45%,rgba(8,4,22,0.82) 100%);}
+  .ov-areas{background:linear-gradient(180deg,rgba(8,4,22,0.72) 0%,rgba(8,4,22,0.58) 45%,rgba(8,4,22,0.84) 100%);}
+  .ov-cta{background:linear-gradient(180deg,rgba(8,4,22,0.5) 0%,rgba(8,4,22,0.5) 38%,rgba(8,4,22,0.86) 100%);}
+  .photo-sec .bgimg{filter:brightness(0.95) saturate(1.06);}
+  .photo-sec .lead{color:rgba(255,255,255,0.92);}
+  .photo-sec .h2{text-shadow:0 2px 18px rgba(0,0,0,0.45);}
+  .photo-sec .card{background:rgba(16,10,40,0.62);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-color:rgba(255,255,255,0.16);}
+
+  /* TRUST STRIP */
+  .trust{display:flex;flex-wrap:wrap;gap:14px 40px;margin-top:34px;align-items:center;color:var(--mute);font-size:14.5px;}
+  .trust b{color:#fff;font-weight:500;}
+
+  /* FINAL CTA */
+  .final{position:relative;text-align:center;padding:96px 0;overflow:hidden;}
+  .final::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(224,69,123,0.22),transparent 60%),radial-gradient(ellipse at 50% 120%,rgba(255,200,90,0.16),transparent 55%);}
+  .final .inner{position:relative;z-index:2;}
+  .final .btn-wa{margin-top:26px;}
+
+  /* FOOTER */
+  footer{background:#080418;border-top:1px solid rgba(255,255,255,0.07);padding:50px 0 30px;}
+  .foot-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:30px;}
+  .foot-brand{max-width:280px;}
+  .foot-brand p{color:var(--mute);font-size:13.5px;margin-top:10px;}
+  .foot-col h4{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;}
+  .foot-col a{display:block;color:var(--mute);font-size:14px;margin-bottom:9px;}
+  .foot-col a:hover{color:#fff;}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,0.07);margin-top:34px;padding-top:20px;color:rgba(255,255,255,0.5);font-size:12.5px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;}
+
+  /* STICKY MOBILE CTA */
+  .sticky-wa{position:fixed;left:16px;right:16px;bottom:16px;z-index:40;display:none;justify-content:center;}
+  .sticky-wa a{width:100%;max-width:520px;justify-content:center;}
+  @media(max-width:767px){
+    .sticky-wa{display:flex;}
+    .hero-inner{padding-bottom:96px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hbar">
+    <a class="logo" href="/">askprop<b>.ai</b></a>
+    <nav class="hnav">
+      <span class="pill-region"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg>Dubai</span>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <picture>
+    <source media="(min-width:768px)" type="image/webp" srcset="assets/img/hero-dubai-desktop.webp" />
+    <source media="(min-width:768px)" srcset="assets/img/hero-dubai-desktop.jpg" />
+    <source type="image/webp" srcset="assets/img/hero-dubai-phone.webp" />
+    <img class="bg" src="assets/img/hero-dubai-phone.jpg" alt="Dubai skyline at dusk with the Burj Khalifa lit up" fetchpriority="high" />
+  </picture>
+  <div class="scrim"></div>
+  <div class="hero-inner">
+    <span class="eyebrow">Dubai property, simplified</span>
+    <h1>Ask <span class="acc">AiSHA</span></h1>
+    <p class="sub">Your free AI home advisor for Dubai. She knows the areas, the prices, the yields and the honest trade-offs — better than any human ever could.</p>
+
+    <div class="aisha-teaser">
+      <div class="av">A<span class="dot"></span></div>
+      <div class="bubble">A 2-bed in Marina under AED 1.5M? I'll show you the real rental yields and the trade-offs no one mentions.</div>
+    </div>
+
+    <div class="cta-row">
+      <a class="btn-wa js-wa" href="#" data-msg="Hi AiSHA, I'd like help finding the right property in Dubai." data-ref="ASKP-DXB-HOME" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Chat with AiSHA — free
+      </a>
+      <a class="btn-ghost" href="#areas">Explore by area <span class="ar">→</span></a>
+    </div>
+    <div class="scrollcue">Areas · Prices · Rental yields · Golden Visa</div>
+  </div>
+</section>
+
+<!-- VALUE -->
+<section class="section photo-sec">
+  <div class="bgimg" style="background-image:url('assets/img/section-burjalarab.jpg');background-image:image-set(url('assets/img/section-burjalarab.webp') type('image/webp'),url('assets/img/section-burjalarab.jpg') type('image/jpeg'));"></div>
+  <div class="ov ov-dark"></div>
+  <div class="wrap">
+    <div class="kicker">Why buyers talk to AiSHA</div>
+    <h2 class="h2">Honest answers. Zero cost.<br/>Zero pressure.</h2>
+    <p class="lead">AiSHA isn't a salesperson. She tells you what's good <em>and</em> what's wrong about any area or property — then matches you to a RERA-Registered Specialist Broker only when you're ready.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="ic">💬</div>
+        <h3>Free &amp; always honest</h3>
+        <p>No fees, no forms, no app. Just message on WhatsApp. AiSHA has no commission to chase, so the advice is straight.</p>
+      </div>
+      <div class="card">
+        <div class="ic">🏙️</div>
+        <h3>Real Dubai market data</h3>
+        <p>Prices, rental yields and service charges grounded in real transaction data — presented as honest ranges, never invented numbers.</p>
+      </div>
+      <div class="card">
+        <div class="ic">🛂</div>
+        <h3>Golden Visa guidance</h3>
+        <p>Investing AED 2M+? AiSHA explains how your purchase can qualify you for the UAE 10-year Golden Visa, step by step.</p>
+      </div>
+      <div class="card">
+        <div class="ic">🤝</div>
+        <h3>You stay in control</h3>
+        <p>AiSHA matches you to a RERA-Registered Specialist Broker only when you ask. Nothing is shared without your permission.</p>
+      </div>
+    </div>
+    <div class="trust">
+      <span>AiSHA matches you to <b>RERA-Registered Specialist Brokers</b></span>
+      <span>Leadership with <b>50+ years</b> combined Dubai real-estate experience</span>
+    </div>
+  </div>
+</section>
+
+<!-- AREAS -->
+<section class="section areas photo-sec" id="areas">
+  <div class="bgimg" style="background-image:url('assets/img/section-skyline.jpg');background-image:image-set(url('assets/img/section-skyline.webp') type('image/webp'),url('assets/img/section-skyline.jpg') type('image/jpeg'));"></div>
+  <div class="ov ov-areas"></div>
+  <div class="wrap">
+    <div class="kicker">Explore Dubai</div>
+    <h2 class="h2">Where do you want to live<br/>or invest?</h2>
+    <p class="lead">Tap an area and ask AiSHA anything — prices, yields, the honest pros and cons.</p>
+    <div class="chips">
+      <a class="chip" href="/dubai-marina-property">Dubai Marina <span class="ar">→</span></a>
+      <a class="chip" href="/downtown-dubai-property">Downtown Dubai <span class="ar">→</span></a>
+      <a class="chip" href="/jvc-property">JVC <span class="ar">→</span></a>
+      <a class="chip" href="/palm-jumeirah-property">Palm Jumeirah <span class="ar">→</span></a>
+      <a class="chip" href="/business-bay-property">Business Bay <span class="ar">→</span></a>
+      <a class="chip" href="/dubai-hills-property">Dubai Hills <span class="ar">→</span></a>
+    </div>
+    <p style="font-size:13px;color:#ffe6ad;font-style:italic;margin-top:18px;max-width:760px;line-height:1.55;">Asking prices have eased below recent DLD-recorded levels — many see now as <strong style="font-style:normal;color:#fff;font-weight:500;">the right time to invest in Dubai real estate</strong>.</p>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final photo-sec">
+  <div class="bgimg" style="background-image:url('assets/img/energy-szr.jpg');background-image:image-set(url('assets/img/energy-szr.webp') type('image/webp'),url('assets/img/energy-szr.jpg') type('image/jpeg'));"></div>
+  <div class="ov ov-cta"></div>
+  <div class="inner wrap">
+    <div class="kicker" style="display:inline-block">Ready when you are</div>
+    <h2 class="h2">Ask AiSHA your first<br/>Dubai property question.</h2>
+    <p class="lead" style="margin-left:auto;margin-right:auto">Free, instant, on WhatsApp. No pressure, no spam — just the truth about Dubai property.</p>
+    <a class="btn-wa js-wa" href="#" data-msg="Hi AiSHA, I'd like help finding the right property in Dubai." data-ref="ASKP-DXB-CTA" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Chat with AiSHA — free
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a class="logo" href="/">askprop<b>.ai</b></a>
+        <p>Your free AI home advisor for Dubai real estate. Honest answers on WhatsApp — areas, prices, yields and the Golden Visa.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Explore</h4>
+        <a href="/dubai-marina-property">Areas</a>
+        <a href="/dubai-rental-yields">Rental yields</a>
+        <a href="/dubai-golden-visa">Golden Visa</a>
+        <a href="/dubai-property-buying-costs">Buying costs</a>
+      </div>
+      <div class="foot-col">
+        <h4>AiSHA</h4>
+        <a class="js-wa" href="#" data-msg="Hi AiSHA, I'd like help finding the right property in Dubai." data-ref="ASKP-DXB-FOOT">Chat on WhatsApp</a>
+      </div>
+      <div class="foot-col">
+        <h4>Legal</h4>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 askprop.ai — ME Universal IoT Technologies FZE LLC, Dubai, UAE</span>
+      <span>AiSHA is an AI assistant. Property decisions should be confirmed with your RERA-Registered Specialist Broker.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-wa">
+  <a class="btn-wa js-wa" href="#" data-msg="Hi AiSHA, I'd like help finding the right property in Dubai." data-ref="ASKP-DXB-STICKY" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Chat with AiSHA — free
+  </a>
+</div>
+
+<script>
+  // Build context-carrying wa.me deep links (mirrors the QLB-REG broker token).
+  var WA = '971501483346';
+  function waLink(msg, ref){
+    var text = msg + (ref ? ' (' + ref + ')' : '');
+    return 'https://wa.me/' + WA + '?text=' + encodeURIComponent(text);
+  }
+  document.querySelectorAll('.js-wa').forEach(function(a){
+    a.href = waLink(a.data
